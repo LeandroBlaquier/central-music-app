@@ -1,5 +1,12 @@
+import SubHero from "./ui/SubHero";
+import './App.css'
+
 function App() {
-  return <h1>NASHE</h1>;
+  return (
+    <>
+      <SubHero/>
+    </>
+  )
 }
 
 export default App;
