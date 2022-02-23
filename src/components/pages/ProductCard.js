@@ -5,7 +5,7 @@ import products from "../../assets/products";
 import { Box, Text, Divider } from "@chakra-ui/react";
 const ProductCard = () => {
   return (
-    <Box className="container">
+    <Box className="container" m="0 3rem">
       <Box align="center">
         <Divider borderColor="red" w="1%" p={4} />
       </Box>

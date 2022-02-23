@@ -1,6 +1,6 @@
 import React from "react";
 // import {Link} from "react-router-dom"
-// import "./Card.css";
+import "./Card.css";
 import { Box, Image, Text, Stack, Badge } from "@chakra-ui/react";
 const Card = ({ products }) => {
   return (
@@ -10,7 +10,6 @@ const Card = ({ products }) => {
       overflow="hidden"
       boxShadow="lg"
       bg="gray.200"
-
     >
       <Image src={products.image} alt="image not found" />
       <Box p={5} bg="white">
