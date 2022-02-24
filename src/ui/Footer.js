@@ -1,23 +1,23 @@
 // import 'Footer.css'
 
-// const indexMyAccount= ['Overview', 'Oder History', 'Wishlist', 'Account information']
-// const indexStore = ['Security Notice', 'Location & Hours', 'Rentals', 'Privacy Notice']
+// const menuMyAccount= ['Overview', 'Oder History', 'Wishlist', 'Account information']
+// const menuStore = ['Security Notice', 'Location & Hours', 'Rentals', 'Privacy Notice']
 
 const Footer = () => {
   return(
     <>
     <footer>
-      <div className="index-content">
+      <div className="footer-menus">
         <div ></div>
         <div></div>
       </div>
       <div className="social-media">
-        <img src="logo" alt="../image/logo.png" />
-        <div icons-container>
-          <img src="" alt="../image/youtube-icon.png" />
-          <img src="" alt="../image/twiter-icon.png" />
-          <img src="" alt="../image/facebook-icon.png" />
-          <img src="" alt="../image/instagram-icon.png" />
+        <img src="../image/logo.png" alt="logo" />
+        <div className="icons-container" >
+          <img src="../image/youtube-icon.png" alt="youtube" />
+          <img src="../image/twiter-icon.png" alt="twiter" />
+          <img src="../image/facebook-icon.png" alt="facebook" />
+          <img src="../image/instagram-icon.png" alt="instagram" />
         </div>
       </div>
       <div className="">
