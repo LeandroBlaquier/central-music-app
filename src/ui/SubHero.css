@@ -48,11 +48,11 @@
 }
 
 h1 {
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 21px !important;
+  font-weight: 700 !important;
   color: #ffffff;
-  margin: 0;
-  width: 200px;
+  margin: 0 !important;
+  width: 200px !important;
 }
 
 p {
@@ -71,13 +71,13 @@ button {
 }
 
 button {
-  width: 103px;
-  height: 32px;
-  margin-top: 16px;
+  width: 103px !important;
+  height: 32px !important;
+  margin-top: 16px !important;
   border-radius: 32px;
-  background-color: #ff753a;
-  color: #ffffff;
-  font-size: 12px;
+  background-color: #ff753a !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -87,8 +87,8 @@ button {
 
 @media (min-width: 1025px) {
   h1 {
-    font-size: 49px;
-    width: 600px;
+    font-size: 49px !important;
+    width: 600px !important;
   }
   p {
     font-size: 24px;
