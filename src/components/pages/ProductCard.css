@@ -2,12 +2,24 @@
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
 }
+
 .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0px;
+}
+
+@media (max-width: 1025px) {
+  .products-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .products-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
