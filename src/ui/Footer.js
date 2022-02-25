@@ -1,15 +1,15 @@
 import './Footer.css';
-import logo from '../image/logo.png'
-import youtube from '../image/youtube.png';
-import twitter from '../image/twitter.png'
-import facebook from '../image/facebook.png'
-import instagram from '../image/instagram.png'
+import logo from '../assets/images/logo.png'
+import youtube from '../assets/images/youtube.png';
+import twitter from '../assets/images/twitter.png'
+import facebook from '../assets/images/facebook.png'
+import instagram from '../assets/images/instagram.png'
 
 const menuAccount= ['Overview', 'Oder History', 'Wishlist', 'Account information']
 const menuStore = ['Security Notice', 'Location & Hours', 'Rentals', 'Privacy Notice']
 
 const Footer = () => {
-  return(
+  return (
     <>
     <center>
       <footer>
@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
     </center>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
