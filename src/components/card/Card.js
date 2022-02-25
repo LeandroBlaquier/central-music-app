@@ -10,6 +10,7 @@ const Card = ({ products }) => {
       overflow="hidden"
       boxShadow="lg"
       bg="gray.200"
+      m="1em"
     >
       <Image src={products.image} alt="image not found" />
       <Box p={5} bg="white">
