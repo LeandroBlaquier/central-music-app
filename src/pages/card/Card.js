@@ -3,9 +3,9 @@ import "./Card.css";
 import { Box, Image, Stack, Text } from "@chakra-ui/react";
 function Card({ articles }) {
   return (
-    <Box w="20rem" rounded="20px" overflow="hidden">
+    <Box w="20rem" rounded="20px" overflow="hidden" boxShadow="lg">
       <Image src={articles.image} alt="image not found" />
-      <Box>
+      <Box p={5} color="white" className="">
         <Stack>
           <Text>{articles.title}</Text>
           <Text>{articles.description}</Text>
