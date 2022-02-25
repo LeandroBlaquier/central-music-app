@@ -14,10 +14,10 @@ const Footer = () => {
         <div className="social-media">
           <img src="logo" alt="../image/logo.png" />
           <div icons-container>
-            <img src="../image/youtube-icon.png" alt="image not found" />
-            <img src="../image/twiter-icon.png" alt="image not found" />
-            <img src="../image/facebook-icon.png" alt="image not found" />
-            <img src="../image/instagram-icon.png" alt="image not found" />
+            <img src="" alt="../image/youtube-icon.png" />
+            <img src="" alt="../image/twiter-icon.png" />
+            <img src="" alt="../image/facebook-icon.png" />
+            <img src="" alt="../image/instagram-icon.png" />
           </div>
         </div>
         <div className="">
