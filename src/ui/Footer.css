@@ -1,0 +1,123 @@
+footer {
+  background-color: #505050;
+  max-width: 412px;
+  height: 290px;
+  padding: 37px 0 32px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 58px;
+  height: 0px;
+  border-bottom: 3px solid #ffffff;
+  margin-bottom: 9px;
+}
+
+@media (min-width: 1025px) {
+  footer {
+    max-width: 1024px;
+    padding: 0 51.99px 52px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-menu {
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+  }
+  .menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1225px) {
+  footer {
+    max-width: 1440px;
+    padding: 0 51.99px 52px 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-menu {
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    gap: 48px;
+  }
+  .menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 118.01px;
+  height: 20px;
+  margin-top: 32px;
+}
+
+@media (min-width: 1025px) {
+  .icons-container {
+    margin-top: 27px;
+  }
+}
+
+.autor {
+  background-color: #252525;
+  max-width: 1440px;
+  height: 34px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+p.footer {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-top: 9px;
+}
+
+p.autor {
+  font-size: 12.8px;
+  font-weight: 400;
+  color: white;
+  padding: 0;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}

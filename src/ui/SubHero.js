@@ -5,8 +5,8 @@ import React from 'react'
     return (
       <center>
          <div className="subHero">
-            <h1>FREE GUITAR LESSONS!</h1>
-            <p>Purchase any guitar over $499.99 and recieve a one-hour guitar lesson free. </p>
+            <h1 className='free'>FREE GUITAR LESSONS!</h1>
+            <p className='purchase'>Purchase any guitar over $499.99 and recieve a one-hour guitar lesson free. </p>
             <button>LEARN MORE</button>
          </div>
       </center>

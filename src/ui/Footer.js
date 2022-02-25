@@ -1,29 +1,49 @@
-// import 'Footer.css'
+import './Footer.css';
+import logo from '../image/logo.png'
+import youtube from '../image/youtube.png';
+import twitter from '../image/twitter.png'
+import facebook from '../image/facebook.png'
+import instagram from '../image/instagram.png'
 
-// const menuMyAccount= ['Overview', 'Oder History', 'Wishlist', 'Account information']
-// const menuStore = ['Security Notice', 'Location & Hours', 'Rentals', 'Privacy Notice']
+const menuAccount= ['Overview', 'Oder History', 'Wishlist', 'Account information']
+const menuStore = ['Security Notice', 'Location & Hours', 'Rentals', 'Privacy Notice']
 
 const Footer = () => {
   return(
     <>
-    <footer>
-      <div className="footer-menus">
-        <div ></div>
-        <div></div>
+    <center>
+      <footer>
+          <div className="footer-menu">
+            <div className='menu'>
+              <div className='line'></div>
+              <h1 className='mt'>My Account</h1>
+              {menuAccount.map((item) => (
+                <p className='footer' key={item} >{item}</p>
+              ))}
+            </div>
+            <div className='menu'>
+              <div className='line'></div>
+              <h1 className='mt'>Store</h1>
+              {menuStore.map((item) => (
+                <p className='footer' key={item} >{item}</p>
+              ))}
+            </div>
+          </div>
+
+          <div className="social-media">
+            <img className='logo' src = {logo} />
+            <div className="icons-container" >
+              <img src = {youtube}/>
+              <img src = {twitter}/>
+              <img src = {instagram}/>
+              <img src = {facebook} />
+            </div>
+          </div>
+      </footer>
+      <div className="autor">
+        <p className='autor'>©2021 Music Store</p>
       </div>
-      <div className="social-media">
-        <img src="../image/logo.png" alt="logo" />
-        <div className="icons-container" >
-          <img src="../image/youtube-icon.png" alt="youtube" />
-          <img src="../image/twiter-icon.png" alt="twiter" />
-          <img src="../image/facebook-icon.png" alt="facebook" />
-          <img src="../image/instagram-icon.png" alt="instagram" />
-        </div>
-      </div>
-      <div className="">
-        <p>©2021 Music Store</p>
-      </div>
-    </footer>
+    </center>
     </>
   )
 }
