@@ -7,14 +7,12 @@ import Home from "./components/pages/Home";
 function App() {
   return (
     <>
-      <SubHero />
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>
-      <Footer />
     </>
   );
 }
