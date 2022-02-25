@@ -4,7 +4,7 @@ import peluca from "./images/peluca.png";
 import table from "./images/table.png";
 import guitar2 from "./images/guitar2.png";
 
-const Pictures = [
+const Articles = [
   {
     id: 1,
     image: guitar,
@@ -18,7 +18,7 @@ const Pictures = [
     description: "Article Subhead",
   },
   {
-    id: 1,
+    id: 3,
     image: peluca,
     title: "Article Title",
     description: "Article Subhead",
@@ -30,10 +30,10 @@ const Pictures = [
     description: "Article Subhead",
   },
   {
-    id: 1,
+    id: 5,
     image: guitar2,
     title: "Article Title",
     description: "Article Subhead",
   },
 ];
-export default Pictures;
+export default Articles;
