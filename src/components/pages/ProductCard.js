@@ -7,7 +7,7 @@ const ProductCard = () => {
   return (
     <Box className="container" width={["100%"]}>
       <Box align="center">
-        <Divider borderColor="red" w="1%" p={4} />
+        <Divider p={4} w="50px" borderBottom="4px solid #AB0433" mb="9px" />
       </Box>
       <Text
         as="h1"
@@ -15,6 +15,7 @@ const ProductCard = () => {
         fontSize="2rem"
         fontFamily="Bebas Neue"
         letterSpacing="wide"
+        color="black"
       >
         New Products
       </Text>
