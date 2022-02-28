@@ -2,7 +2,7 @@ import React from "react";
 import "./ArticleCard.css";
 import Card from "./card/Card";
 import articles from "../assets/Article";
-import { Box, Text, Divider } from "@chakra-ui/react";
+import { Box, Text, Divider, Center, Grid } from "@chakra-ui/react";
 const ArticleCard = () => {
   return (
     <Box className="container" m="0 3rem">
@@ -18,11 +18,13 @@ const ArticleCard = () => {
       >
         Gear Heads
       </Text>
-      <Box className="art-list">
-        {articles.map((article, index) => (
-          <Card key={index} articles={article} />
-        ))}
-      </Box>
+      <Center>
+        <Grid templateColumns="repeat(2, 1fr)">
+          <Box className="art-list">
+            {articles.filter((article) => article.id === 1)}
+          </Box>
+        </Grid>
+      </Center>
     </Box>
   );
 };

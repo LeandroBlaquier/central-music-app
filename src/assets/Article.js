@@ -18,7 +18,7 @@ const Articles = [
     description: "Article Subhead",
   },
   {
-    id: 3,
+    id: 1,
     image: peluca,
     title: "Article Title",
     description: "Article Subhead",
@@ -30,7 +30,7 @@ const Articles = [
     description: "Article Subhead",
   },
   {
-    id: 5,
+    id: 1,
     image: guitar2,
     title: "Article Title",
     description: "Article Subhead",
