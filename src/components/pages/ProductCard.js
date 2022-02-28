@@ -1,8 +1,9 @@
 import React from "react";
-import "./ProductCard.css";
+// import "./ProductCard.css";
 import Card from "../card/Card";
 import products from "../../assets/products";
 import { Box, Text, Divider, Center } from "@chakra-ui/react";
+// import { useBreakpointValue } from "@chakra-ui/react";
 const ProductCard = () => {
   return (
     <Box className="container" width={["100%"]}>
@@ -15,11 +16,21 @@ const ProductCard = () => {
         fontSize="2rem"
         fontFamily="Bebas Neue"
         letterSpacing="wide"
+        d="flex"
+        flexDir="column"
+        justify="center"
+        align="center"
+        p="0px"
       >
         New Products
       </Text>
       <Center>
-        <Box className="products-list">
+        <Box
+          className="products-list"
+          mt="1rem"
+          d="grid"
+          gridTemplateColumns="repeat(3,1fr)"
+        >
           {products.map((product, index) => (
             <Card key={index} products={product} />
           ))}
