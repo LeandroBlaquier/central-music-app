@@ -45,12 +45,12 @@ const Footer = () => {
           </div>
 
           <div className="social-media">
-            <img className="logo" src={logo} />
+            <img className="logo" src={logo} alt="img not found" />
             <div className="icons-container">
-              <img src={youtube} />
-              <img src={twitter} />
-              <img src={instagram} />
-              <img src={facebook} />
+              <img src={youtube} alt="img not found" />
+              <img src={twitter} alt="img not found" />
+              <img src={instagram} alt="img not found" />
+              <img src={facebook} alt="img not found" />
             </div>
           </div>
         </footer>
