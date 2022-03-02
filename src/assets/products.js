@@ -26,11 +26,12 @@ const Pictures = [
     description: "Product description here",
   },
   {
-    id: 3,
+    id: 4,
     image: guitar4,
     tittle: "Brand Name",
     price: "$2,995",
     description: "Product description here",
+    display: ["unset", "unset", "unset", "none"],
   },
 ];
 export default Pictures;
