@@ -1,27 +1,40 @@
-import { Box, Container, Divider, Heading, Center } from "@chakra-ui/react";
+import { Box, Divider, Text, Center } from "@chakra-ui/react";
 import React from "react";
 import Card from "../card/Card";
-import "./ProductCard.css";
-import { popularFinds } from "../../assets/popularFinds";
+// import "./ProductCard.css";
+import { PictureFind } from "../../assets/popularFinds";
 
 const PopularFinds = () => {
   return (
-    <Box bg="#ECECEC">
-      <Container mt="3rem" maxWidth="90%">
-        <Center>
-          <Divider p={4} w="50px" borderBottom="4px solid #AB0433" mb="9px" />
-        </Center>
-        <Heading color="#505050" textAlign="center" className="title">
-          Popular Finds
-        </Heading>
-        <Center>
-          <Box className="products-list">
-            {popularFinds.map((popularFinds, index) => (
-              <Card key={index} products={popularFinds} />
-            ))}
-          </Box>
-        </Center>
-      </Container>
+    <Box bg="#ECECEC" className="container">
+      <Center>
+        <Divider p={4} w="50px" borderBottom="4px solid #AB0433" mb="9px" />
+      </Center>
+      <Text
+        color="#505050"
+        fontSize="2rem"
+        fontFamily="Bebas Neue"
+        letterSpacing="wide"
+        textAlign="center"
+        flexDir="column"
+        justify="center"
+        align="center"
+        p="0px"
+      >
+        Popular Finds
+      </Text>
+      <Center>
+        <Box
+          className="products-list"
+          mb="5rem"
+          d="grid"
+          gridTemplateColumns="repeat(3,1fr)"
+        >
+          {PictureFind.map((PictureFind, index) => (
+            <Card key={index} products={PictureFind} />
+          ))}
+        </Box>
+      </Center>
     </Box>
   );
 };
