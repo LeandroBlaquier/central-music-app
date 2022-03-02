@@ -1,8 +1,8 @@
 import React from "react";
-import "./ArticleCard.css";
+// import "./ArticleCard.css";
 import Card from "./card/Card";
 import articles from "../assets/Article";
-import { Box, Text, Divider, Center, Grid } from "@chakra-ui/react";
+import { Box, Text, Divider, Center } from "@chakra-ui/react";
 const ArticleCard = () => {
   return (
     <Box className="container" m="0 3rem">
@@ -15,15 +15,25 @@ const ArticleCard = () => {
         fontSize="2rem"
         fontFamily="Bebas Neue"
         letterSpacing="wide"
+        d="flex"
+        flexDir="columns"
+        justify="center"
+        align="center"
+        p="0px"
       >
         Gear Heads
       </Text>
       <Center>
-        <Grid templateColumns="repeat(2, 1fr)">
-          <Box className="art-list">
-            {articles.filter((article) => article.id === 1)}
+        <Box
+          className="art-list"
+          mt="1rem"
+          d="grid"
+          tempalteColumns="repeat(2,1fr"
+        >
+          <Box>
+            <Card articles={articles} />
           </Box>
-        </Grid>
+        </Box>
       </Center>
     </Box>
   );
