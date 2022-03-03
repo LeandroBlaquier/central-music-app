@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import App from "./CardIndex";
 // import "./Index.css";
 import { ChakraProvider } from "@chakra-ui/react";
 
 ReactDOM.render(
-    <ChakraProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </ChakraProvider>,
-    document.getElementById("root")
-  );
+  <ChakraProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ChakraProvider>,
+  document.getElementById("root")
+);

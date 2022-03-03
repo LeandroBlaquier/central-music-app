@@ -29,7 +29,12 @@ const ProductCard = () => {
           className="products-list"
           mt="1rem"
           d="grid"
-          gridTemplateColumns="repeat(3,1fr)"
+          gridTemplateColumns={[
+            "repeat(1,1fr)",
+            "repeat(1,1fr)",
+            "repeat(2,1fr)",
+            "repeat(3, 1fr)",
+          ]}
         >
           {products.map((product, index) => (
             <Card key={index} products={product} />

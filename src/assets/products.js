@@ -31,7 +31,7 @@ const Pictures = [
     tittle: "Brand Name",
     price: "$2,995",
     description: "Product description here",
-    display: ["1225px", "1200px", "1024px", "759px", "none"],
+    display: ["unset", "unset", "unset", "none"],
   },
 ];
 export default Pictures;
