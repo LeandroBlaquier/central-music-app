@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ArticleCard from "./pages/ArticleCard";
+import GearHead from "./pages/GearHead";
 import Error404 from "./pages/Error404";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<ArticleCard />}></Route>
+          <Route path="/" element={<GearHead />}></Route>
           <Route path="*" element={<Error404 />}></Route>
         </Routes>
       </Router>
