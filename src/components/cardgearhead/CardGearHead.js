@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Card.css";
 import { Box, Image, Stack, Text } from "@chakra-ui/react";
 function Card({ articles }) {
   return (

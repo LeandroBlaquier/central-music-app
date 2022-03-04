@@ -1,7 +1,7 @@
 import { Divider, Container, Heading, Box } from "@chakra-ui/react";
 import React from "react";
-import { gearhead } from "../assets/GearHeadx";
-import ArticleCard from "./ArticleCard";
+import { gearhead } from "../../assets/GearHeadx";
+import ArticleCard from "../../pages/ArticleCard";
 
 const Gearhead = () => {
   return (
