@@ -6,9 +6,15 @@ import { Box, Text, Divider, Center } from "@chakra-ui/react";
 // import { useBreakpointValue } from "@chakra-ui/react";
 const ProductCard = () => {
   return (
-    <Box className="container" width={["100%"]}>
+    <Box className="container" mb="3rem">
       <Box align="center">
-        <Divider p={4} w="50px" borderBottom="4px solid #AB0433" mb="9px" />
+        <Divider
+          p={4}
+          w="50px"
+          borderBottom="4px solid #AB0433"
+          mb="9px"
+          align="center"
+        />
       </Box>
       <Text
         as="h1"
@@ -30,7 +36,12 @@ const ProductCard = () => {
           className="products-list"
           mt="1rem"
           d="grid"
-          gridTemplateColumns="repeat(3,1fr)"
+          gridTemplateColumns={[
+            "repeat(1,1fr)",
+            "repeat(1,1fr)",
+            "repeat(2,1fr)",
+            "repeat(3, 1fr)",
+          ]}
         >
           {products.map((product, index) => (
             <Card key={index} products={product} />

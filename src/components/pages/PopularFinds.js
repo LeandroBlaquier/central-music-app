@@ -6,7 +6,7 @@ import { PictureFind } from "../../assets/popularFinds";
 
 const PopularFinds = () => {
   return (
-    <Box bg="#ECECEC" className="container">
+    <Box bg="#ECECEC" className="container" mb="3rem">
       <Center>
         <Divider p={4} w="50px" borderBottom="4px solid #AB0433" mb="9px" />
       </Center>
@@ -28,7 +28,12 @@ const PopularFinds = () => {
           className="products-list"
           mb="5rem"
           d="grid"
-          gridTemplateColumns="repeat(3,1fr)"
+          gridTemplateColumns={[
+            "repeat(1,1fr)",
+            "repeat(1,1fr)",
+            "repeat(2,1fr)",
+            "repeat(3, 1fr)",
+          ]}
         >
           {PictureFind.map((PictureFind, index) => (
             <Card key={index} products={PictureFind} />
