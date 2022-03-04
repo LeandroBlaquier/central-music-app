@@ -1,5 +1,5 @@
 import React from "react";
-// import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 // import "./Card.css";
 import { Box, Image, Text, Stack, Badge } from "@chakra-ui/react";
 const Card = ({ products }) => {
@@ -13,17 +13,21 @@ const Card = ({ products }) => {
       m="1rem"
       d={products.display}
     >
-      <Image src={products.image} alt="image not found" />
+      <Link key={products.id} to={`/products/${products.id}`}>
+        <Image src={products.image} alt="image not found" />
+      </Link>
       <Box p={5} bg="white">
         <Stack isInline align="base-line" justify="space-between">
-          <Text
-            as="h2"
-            fontFamily="Bebas Neue"
-            fontSize="1.5rem"
-            letterSpacing="wide"
-          >
-            {products.tittle}
-          </Text>
+          <Link key={products.id} to={`/products/${products.id}`}>
+            <Text
+              as="h2"
+              fontFamily="Bebas Neue"
+              fontSize="1.5rem"
+              letterSpacing="wide"
+            >
+              {products.tittle}
+            </Text>
+          </Link>
           <Text fontFamily="Bebas Neue" fontSize="1.5rem" letterSpacing="wide">
             {products.price}
           </Text>

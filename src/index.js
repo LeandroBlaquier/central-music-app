@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./CardIndex";
+import App from "./App";
 // import "./Index.css";
 import { ChakraProvider } from "@chakra-ui/react";
 
